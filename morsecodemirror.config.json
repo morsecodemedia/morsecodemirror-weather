@@ -1,0 +1,94 @@
+{
+  "twilioAuthToken": "",
+  "twilioAccountSid": "",
+  "twilioNumber": "",
+  "openWeatherMapAPIKey": "",
+  "darkSkyAPIKey": "",
+  "googleMapsAPIKey": "",
+  "lang": "en",
+  "timezone": "America/New_York",
+  "unitsofMeasurement": "imperial",
+  "weatherRefreshInterval": 600000,
+  "home": {
+		"label": "",
+		"address": {
+			"address1": "",
+			"address2": "",
+			"address3": "",
+			"city": "",
+			"state": "",
+			"zip": ""
+		},
+		"latitude": "",
+		"longitude": ""
+	},
+  "locations": [
+    {
+      "label": "",
+      "address": {
+        "address1": "",
+        "address2": "",
+        "address3": "",
+        "city": "",
+        "state": "",
+        "zip": ""
+      },
+      "latitude": "",
+      "longitude": ""
+    },
+    {
+      "label": "",
+      "address": {
+        "address1": "",
+        "address2": "",
+        "address3": "",
+        "city": "",
+        "state": "",
+        "zip": ""
+      },
+      "latitude": "",
+      "longitude": ""
+    },
+    {
+      "label": "",
+      "address": {
+        "address1": "",
+        "address2": "",
+        "address3": "",
+        "city": "",
+        "state": "",
+        "zip": ""
+      },
+      "latitude": "",
+      "longitude": ""
+    },
+    {
+      "label": "",
+      "address": {
+        "address1": "",
+        "address2": "",
+        "address3": "",
+        "city": "",
+        "state": "",
+        "zip": ""
+      },
+      "latitude": "",
+      "longitude": ""
+    },
+    {
+      "label": "",
+      "address": {
+        "address1": "",
+        "address2": "",
+        "address3": "",
+        "city": "",
+        "state": "",
+        "zip": ""
+      },
+      "latitude": "",
+      "longitude": ""
+    }
+	],
+	"travelResponse": "",
+	"travelError": ""
+}
