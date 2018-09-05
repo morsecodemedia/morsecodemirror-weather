@@ -1,7 +1,6 @@
 <template>
   <div id="wrapper">
     <main>
-
       <router-link class="home-btn" to="LandingPage">⚏</router-link>
     </main>
   </div>
@@ -18,11 +17,9 @@
         darkSkyAPI: config.darkSkyAPIKey,
         lang: 'en',
         unitsOfMeasurement: 'imperial',
-        weather: [{
-          currentForecast: {},
-          dailyForecast: {},
-          weatherAlerts: {}
-        }],
+        currentForecast: {},
+        dailyForecast: {},
+        weatherAlerts: {},
         weatherRefreshInterval: 600000,
         lat: config.home.latitude,
         long: config.home.longitude,
@@ -43,8 +40,7 @@
           let currentResponse = response.data.currently
           let dailyResponse = response.data.daily.data
           let alertResponse = response.data.alerts
-          let dailyForecast = {}
-          this.weather.currentForecast = {
+          this.currentForecast = {
             'summary': currentResponse.summary,
             'icon': currentResponse.icon,
             'currentTemp': Math.round(currentResponse.temperature),
@@ -54,7 +50,7 @@
             'windBearing': currentResponse.windBearing
           }
           dailyResponse.map((day) => {
-            dailyForecast[day.time] = {
+            this.dailyForecast[day.time] = {
               'time': new Date(day.time*1000),
               'summary': day.summary,
               'uvIndex': day.uvIndex,
@@ -70,7 +66,7 @@
             }
           })
           if (alertResponse) {
-            this.weather.weatherAlerts = {
+            this.weatherAlerts = {
               'description':  (alertResponse.description) ? alertResponse.description : '',
               'expires': (alertResponse.expires) ? alertResponse.expires : '',
               'regions': (alertResponse.regions) ? alertResponse.regions : '',
@@ -79,8 +75,10 @@
               'title': (alertResponse.title) ? alertResponse.title : ''
             }
           }
-          this.weather.dailyForecast = dailyForecast
-          window.console.log(this.weather)
+
+          window.console.log('currentForecast',this.currentForecast)
+          window.console.log('dailyForecast',this.dailyForecast)
+          window.console.log('weatherAlerts',this.weatherAlerts)
         })
         .catch(error => {
           window.console.log(error)

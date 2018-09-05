@@ -1,5 +1,24 @@
 {
+  "name": "@morsecodemedia/morsecodemirror-weather",
+  "description": "This weather module is a Vue component meant for the morsecodemirror smart mirror project.",
+  "version": "00.01.00",
+  "main": "Weather.vue",
   "dependencies": {
     "axios": "^0.18.0"
-  }
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/morsecodemedia/morsecodemirror-weather.git"
+  },
+  "keywords": [],
+  "author": "brandonmorse <brandon@morsecodemedia.com> (https://www.morsecodemedia.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/morsecodemedia/morsecodemirror-weather/issues"
+  },
+  "homepage": "https://github.com/morsecodemedia/morsecodemirror-weather#readme"
 }
