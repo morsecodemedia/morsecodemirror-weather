@@ -1,7 +1,7 @@
 {
   "name": "@morsecodemedia/morsecodemirror-weather",
   "description": "This weather module is a Vue component meant for the morsecodemirror smart mirror project.",
-  "version": "00.01.00",
+  "version": "00.01.01",
   "main": "Weather.vue",
   "dependencies": {
     "axios": "^0.18.0"
@@ -14,7 +14,14 @@
     "type": "git",
     "url": "git+https://github.com/morsecodemedia/morsecodemirror-weather.git"
   },
-  "keywords": [],
+  "keywords": [
+    "Vue",
+    "Electron",
+    "Weather",
+    "Axios",
+    "Dark Sky",
+    "OpenWeatherMap"
+  ],
   "author": "brandonmorse <brandon@morsecodemedia.com> (https://www.morsecodemedia.com)",
   "license": "MIT",
   "bugs": {
